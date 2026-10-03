@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フラッシュ暗算</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>フラッシュ暗算</h1>
+
+        <div class="settings">
+            <label>
+                桁数
+                <select id="digits">
+                    <option value="1">1桁</option>
+                    <option value="2">2桁</option>
+                    <option value="3">3桁</option>
+                </select>
+            </label>
+
+            <label>
+                口数
+                <select id="count">
+                    <option value="3">3口</option>
+                    <option value="5" selected>5口</option>
+                    <option value="10">10口</option>
+                </select>
+            </label>
+
+            <label>
+                表示間隔
+                <select id="speed">
+                    <option value="1500">1.5秒</option>
+                    <option value="1000" selected>1秒</option>
+                    <option value="700">0.7秒</option>
+                    <option value="500">0.5秒</option>
+                </select>
+            </label>
+        </div>
+
+        <div id="number">スタート</div>
+
+        <button id="startButton">スタート</button>
+
+        <div id="answerArea" class="hidden">
+            <input type="number" id="answer" placeholder="答えを入力">
+            <button id="submitButton">回答する</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
